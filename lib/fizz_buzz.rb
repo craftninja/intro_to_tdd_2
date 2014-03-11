@@ -11,6 +11,11 @@ class FizzBuzz
       fizz_buzz<<i
       i+=1
     end
+    i=0
+    while i<@max_num
+      fizz_buzz[i] = "Fizz" if fizz_buzz[i] % 3 == 0
+      i+=1
+    end
     fizz_buzz
   end
 
