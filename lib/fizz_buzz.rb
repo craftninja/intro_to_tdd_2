@@ -13,6 +13,7 @@ class FizzBuzz
     end
     i=0
     while i<@max_num
+      fizz_buzz[i] = "FizzBuzz" if (fizz_buzz[i] % 3 == 0 && fizz_buzz[i] % 5 == 0)
       fizz_buzz[i] = "Fizz" if fizz_buzz[i] % 3 == 0
       fizz_buzz[i] = "Buzz" if fizz_buzz[i] % 5 == 0
       i+=1
