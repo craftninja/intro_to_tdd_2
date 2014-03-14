@@ -21,6 +21,13 @@ describe KeyValueStore do
 
 
   end
-  it "Allows the user to get a list of all the keys"
+  it "Allows the user to get a list of all the keys" do
+    @its_a_hash = KeyValueStore.new
+    @its_a_hash.add_kv_pair("some key", "some pair")
+    @its_a_hash.add_kv_pair("another key", "another pair")
+
+
+    expect(@its_a_hash.list_keys).to eq ["some key", "another key"]
+  end
   it "Allows the user to clear the store of all keys"
 end

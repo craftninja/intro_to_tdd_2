@@ -18,4 +18,10 @@ class KeyValueStore
   def delete_pair(key)
     @storage.delete(key)
   end
+
+  def list_keys
+    list = []
+    @storage.each_key {|key| list << key}
+    list
+  end
 end
