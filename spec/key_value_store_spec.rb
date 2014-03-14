@@ -20,6 +20,9 @@ describe KeyValueStore do
   it "Allows the user to get a list of all the keys" do
    expect(@its_a_hash.list_keys).to eq ["some key", "another key"]
   end
-  
-  it "Allows the user to clear the store of all keys"
+
+  it "Allows the user to clear the store of all keys" do
+    @its_a_hash.clear_all
+    expect({}).to eq @its_a_hash.the_hash
+  end
 end

@@ -24,4 +24,12 @@ class KeyValueStore
     @storage.each_key {|key| list << key}
     list
   end
+
+  def clear_all
+    @storage.each do |key, value|
+      @storage.delete(key)
+    end
+    @storage
+
+  end
 end
