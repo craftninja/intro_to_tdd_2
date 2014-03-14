@@ -9,6 +9,7 @@ class OddEven
     @array.each do |num|
       if num%2==0
         @array[i] = "even"
+      else @array[i] = "odd"
       end
       i+=1
     end
