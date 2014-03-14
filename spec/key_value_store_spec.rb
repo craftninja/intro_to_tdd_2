@@ -11,7 +11,16 @@ describe KeyValueStore do
 
     expect(@its_a_hash.the_hash["some key"]).to eq "some pair"
   end
-  it "Allows the user to delete a single key/value pair"
+  it "Allows the user to delete a single key/value pair" do
+    @its_a_hash = KeyValueStore.new
+    @its_a_hash.add_kv_pair("some key", "some pair")
+    @its_a_hash.add_kv_pair("another key", "another pair")
+
+    @its_a_hash.delete_pair("some key")
+    expect(@its_a_hash.the_hash["some key"]).to eq nil
+
+
+  end
   it "Allows the user to get a list of all the keys"
   it "Allows the user to clear the store of all keys"
 end

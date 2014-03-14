@@ -14,4 +14,8 @@ class KeyValueStore
   def find_pair(key)
     @storage[key]
   end
+
+  def delete_pair(key)
+    @storage.delete(key)
+  end
 end
