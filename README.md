@@ -54,3 +54,10 @@ There is a subtract method that takes two numbers. It returns the difference of 
 There is a save method that allows you to save a number to the calculator's memory. The number can be retrieved using the get method.
 There is a clear method that clears the calculator's memory. When the memory is empty, get returns 0.
 When a calculator is initialized, the memory value is 0.
+
+angry dog
+You have a very nice dog, that hates to be poked, but you like to poke the dog!
+
+You poke the dog and the dog will "growl" to warn you to stop.
+
+But, if you poke the dog three times, the dog will "bark" instead.
