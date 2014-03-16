@@ -9,7 +9,14 @@ describe BufferedLogger do
     expect(actual).to eq expected
   end
 
-  it "records a log"
+  it "records a log" do
+    buff_log=BufferedLogger.new
+    buff_log.new_log("I coded in ruby all day... fun!", Date.new(2011, 4, 25))
+    expected = ["2011-04-25T00:00 - I coded in ruby all day... fun!"]
+    actual = buff_log.current_backlog
+    expect(actual).to eq expected
+  end
+
   it "records a log with a time and date (one line for each log)"
   it "records up to 4 logs with time and date"
   it "writes stuff to a .txt file once there are 5 logs"
