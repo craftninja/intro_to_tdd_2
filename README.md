@@ -57,7 +57,16 @@ When a calculator is initialized, the memory value is 0.
 
 angry dog
 You have a very nice dog, that hates to be poked, but you like to poke the dog!
-
 You poke the dog and the dog will "growl" to warn you to stop.
-
 But, if you poke the dog three times, the dog will "bark" instead.
+
+buffered logger
+You need to write a class that can write log messages to a file.  This logger should wait until the log method
+has been called 5 times before it actually writes out to the file.
+When the logger is initialized, it needs to take a string which represents a file path.
+When you call the log method, you pass it a string - like "I'm logging something"
+After you've called the log method 5 times, it writes all five messages out to a file.  For each message it writes out
+the date and time (including the hour / minute / second / millisecond) as well as the string you passed it.
+Each message should be on it's own line in the file.
+After you call it 5 more times, it should write out 5 new lines, etc...
+NOTE: in order for your tests to be reliable, you'll need to delete the log file _before_ every spec.
