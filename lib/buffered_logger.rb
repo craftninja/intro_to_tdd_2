@@ -1,5 +1,5 @@
 class BufferedLogger
-  def initialize(filename = "buffered_logger.txt")
+  def initialize(filename = "lib/buffered_logger.txt")
     @filename = filename
     @current_backlog_array = []
     File.open @filename, 'w' do |f|

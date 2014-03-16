@@ -1,0 +1,10 @@
+2014-03-10T00:00 - I coded in ruby all day... fun!
+2014-03-11T00:00 - I hit a wall... time to make some tea.
+2014-03-12T00:00 - I coded in ruby all day... fun!
+2014-03-13T00:00 - I hit a wall... time to make some tea.
+2014-03-14T00:00 - I coded in ruby all day... fun!
+2014-03-15T00:00 - I coded in ruby all day... fun!
+2014-03-16T00:00 - I hit a wall... time to make some tea.
+2014-03-17T00:00 - I coded in ruby all day... fun!
+2014-03-18T00:00 - I hit a wall... time to make some tea.
+2014-03-19T00:00 - I coded in ruby all day... fun!

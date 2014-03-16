@@ -4,7 +4,7 @@ require 'date'
 describe BufferedLogger do
   it "is initialized with a filepath" do
     buff_log=BufferedLogger.new
-    expected = 'buffered_logger.txt'
+    expected = 'lib/buffered_logger.txt'
     actual = buff_log.filename
     expect(actual).to eq expected
   end
