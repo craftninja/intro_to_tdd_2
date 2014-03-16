@@ -1,7 +1,14 @@
 require 'buffered_logger'
+require 'date'
 
 describe BufferedLogger do
-  it "is initialized with a filepath"
+  it "is initialized with a filepath" do
+    buff_log=BufferedLogger.new
+    expected = 'buffered_logger.txt'
+    actual = buff_log.filename
+    expect(actual).to eq expected
+  end
+
   it "records a log"
   it "records a log with a time and date (one line for each log)"
   it "records up to 4 logs with time and date"
