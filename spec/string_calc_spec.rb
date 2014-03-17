@@ -9,14 +9,12 @@ describe StringCalc do
   end
 
   it "returns the sum of the numbers in the string, like 1 for '1'" do
-    pending
     calc = StringCalc.new
     expected = 1
     actual = calc.add("1")
     expect(actual).to eq (expected)
   end
   it "returns 10 If the string '1, 2, 7 ' is passed" do
-    pending
     calc = StringCalc.new
     expected = 10
     actual = calc.add("1, 2, 7")
