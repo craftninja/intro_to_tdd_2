@@ -21,7 +21,6 @@ describe StringCalc do
     expect(actual).to eq (expected)
   end
   it "can specify a delimiter at initialization time." do
-    pending
     calc = StringCalc.new(";")
     expected = 10
     actual = calc.add("1; 2; 7")
