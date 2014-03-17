@@ -14,6 +14,11 @@ describe LeapYear do
     expect(actual).to eq expected
   end
 
-  it "is not leap year if it is divisible by 100 (1900)"
+  it "is not leap year if it is divisible by 100 (1900)" do
+    leap_year_test = LeapYear.new
+    expected = false
+    actual = leap_year_test.yes?(1900)
+    expect(actual).to eq expected
+  end
   it "is leap year if divisible by 400 (2000 is a leap year)"
 end
