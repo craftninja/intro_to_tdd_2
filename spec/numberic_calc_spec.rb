@@ -25,4 +25,10 @@ describe NumericCalc do
     expected = 0
     expect(actual).to eq expected
   end
+  it "calc is initialized with memory = 0" do
+    calculator = NumericCalc.new
+    actual = calculator.number_in_memory
+    expected = 0
+    expect(actual).to eq expected
+  end
 end
