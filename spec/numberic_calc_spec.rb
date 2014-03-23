@@ -19,5 +19,10 @@ describe NumericCalc do
     expected = 7
     expect(actual).to eq expected
   end
-
+  it "can delete the memory" do
+    calculator = NumericCalc.new
+    actual = calculator.clear
+    expected = 0
+    expect(actual).to eq expected
+  end
 end
