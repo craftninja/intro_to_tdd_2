@@ -13,5 +13,11 @@ describe NumericCalc do
     expected = 6
     expect(actual).to eq expected
   end
+  it "can save the number 7 into memory" do
+    calculator = NumericCalc.new
+    actual = calculator.number_in_memory =(7)
+    expected = 7
+    expect(actual).to eq expected
+  end
 
 end
